@@ -1,0 +1,32 @@
+{
+  "name": "engineering_tools",
+  "version": "1.0.0",
+  "description": "Engineering Tools for Engineering Companies",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camiloriosf/Engineering_Tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camiloriosf/Engineering_Tools/issues"
+  },
+  "homepage": "https://github.com/camiloriosf/Engineering_Tools#readme",
+  "dependencies": {
+    "graphql": "^0.9.5",
+    "material-ui": "^0.18.0",
+    "next": "^2.3.0-alpha1",
+    "react": "^15.5.4",
+    "react-apollo": "^1.1.2",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  }
+}
