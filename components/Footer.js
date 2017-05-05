@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-export default class Footer extends Component { 
-  render() {
-    return (
-      <footer>
-        <Link prefetch href='/'>
-          <a className={this.props.pathname === '/' && 'is-active'}>Home</a>          
-        </Link>
-        <style jsx>{`
+export default ({ pathname }) => (
+  <footer>
+    <Link prefetch href="/">
+      <a className={pathname === '/' && 'is-active'}>Home</a>
+    </Link>
+    <style jsx>{`
       footer {
         margin-top: 25px;
       }
@@ -21,7 +19,5 @@ export default class Footer extends Component {
         text-decoration: underline;
       }
     `}</style>
-      </footer>
-    )
-  }
-}
+  </footer>
+);

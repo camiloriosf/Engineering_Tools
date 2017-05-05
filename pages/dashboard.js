@@ -21,7 +21,7 @@ const customMuiTheme = getMuiTheme({
 });
 
 
-class Prices extends Component {
+class Dashboard extends Component {
   static getInitialProps({ req }) {
     const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
     const isServer = !!req;
@@ -34,12 +34,12 @@ class Prices extends Component {
 
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <MainLayout pathname={this.props.url.pathname} title="E-SaaS - Prices">
-          Prices
+        <MainLayout pathname={this.props.url.pathname} title="E-SaaS - Dashboard" type="user">
+          Dashboard
         </MainLayout>
       </MuiThemeProvider>
     );
   }
 }
 
-export default withData(Prices);
+export default withData(Dashboard);
