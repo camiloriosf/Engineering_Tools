@@ -9,7 +9,6 @@ const styles = {
 };
 
 class Auth extends Component {
-
   renderAlert() {
     if (this.props.errorMessage) {
       return (

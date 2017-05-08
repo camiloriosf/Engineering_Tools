@@ -10,6 +10,7 @@ export default ({ children, title = 'E-SaaS', pathname, type = 'main' }) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link href="//cdnjs.cloudflare.com/ajax/libs/grommet/1.4.0/grommet.min.css" rel="stylesheet" type="text/css" />
       <style>{`
                 body { 
                     font-family: 'Roboto', sans-serif;
