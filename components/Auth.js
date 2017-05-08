@@ -29,7 +29,7 @@ class Auth extends Component {
           <TextField hintText="you@youremail.com" floatingLabelText="Email" fullWidth name="email" />
           <div style={styles.action}>
             {this.renderAlert()}
-            <FlatButton key={'CancelButton'} type="button" label="Cancel" secondary style={{ marginRight: 10 }} />
+            <FlatButton key={'CancelButton'} type="button" label="Cancel" onTouchTap={() => this.props.authModal({ open: false })} secondary style={{ marginRight: 10 }} />
             <RaisedButton key={'SubmitButton'} type="submit" label="Submit" primary />
           </div>
         </form>

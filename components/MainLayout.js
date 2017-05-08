@@ -31,7 +31,7 @@ export default ({ children, title = 'E-SaaS', pathname, type = 'main' }) => (
     ) : (
       <div>
         <UserHeader pathname={pathname} />
-        <div style={{ marginTop: 100 }}>
+        <div style={{ marginTop: 20 }}>
           {children}
         </div>
         <Footer pathname={pathname} />
