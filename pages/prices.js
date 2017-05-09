@@ -34,7 +34,7 @@ class Prices extends Component {
 
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <MainLayout pathname={this.props.url.pathname} title="E-SaaS - Prices">
+        <MainLayout pathname={this.props.url.pathname} title="E-SaaS - Prices ">
           Prices
         </MainLayout>
       </MuiThemeProvider>
